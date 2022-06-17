@@ -9,13 +9,18 @@ import SwiftUI
 import Lottie
 
 struct LottieView: UIViewRepresentable {
+    
+    let name = "106649-learn"
+    let loopMode: LottieLoopMode = .loop
+    
     func makeUIView(context: Context) -> UIView {
         let view = UIView()
 
         let animationView = AnimationView()
 
         
-        let animation = Animation.named("106649-learn")
+        let animation = Animation.named(name)
+        animationView.loopMode = loopMode
         animationView.animation = animation
         animationView.play()
         animationView.contentMode = .scaleAspectFill
@@ -25,7 +30,7 @@ struct LottieView: UIViewRepresentable {
         view.addSubview(animationView)
         
         NSLayoutConstraint.activate([
-            animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
+            animationView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5),
             animationView.widthAnchor.constraint(equalTo: view.widthAnchor)
         ])
         return view
