@@ -38,7 +38,7 @@ struct ContentView: UIViewRepresentable {
         
     }
     func updateUIView(_ uiView: UIView, context: Context) {
-
+        
     }
     
 
@@ -49,9 +49,11 @@ struct ContentViewNavigation: View {
         NavigationView {
             VStack {
                 NavigationLink(
-                    destination: LottieView()) {
-                    ContentView()
-                }
+                    
+                    destination: LottieView(),
+                    label: {
+                        ContentView()
+                    })
             }
         }
     }
@@ -59,7 +61,7 @@ struct ContentViewNavigation: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        //ContentView()
+        
         ContentViewNavigation()
     }
 }

@@ -67,12 +67,12 @@
 				E7D5E834285CE61D00B9732F /* LottieSwiftUIApp.swift */,
 				E7D5E850285CEB5F00B9732F /* Lottie */,
 				E7D5E836285CE61D00B9732F /* ContentView.swift */,
+				E7D5E851285CEB9900B9732F /* LottieView.swift */,
 				E7D5E838285CE62400B9732F /* Assets.xcassets */,
 				E7D5E83D285CE62400B9732F /* Persistence.swift */,
 				E7D5E842285CE62400B9732F /* Info.plist */,
 				E7D5E83F285CE62400B9732F /* LottieSwiftUI.xcdatamodeld */,
 				E7D5E83A285CE62400B9732F /* Preview Content */,
-				E7D5E851285CEB9900B9732F /* LottieView.swift */,
 			);
 			path = LottieSwiftUI;
 			sourceTree = "<group>";
