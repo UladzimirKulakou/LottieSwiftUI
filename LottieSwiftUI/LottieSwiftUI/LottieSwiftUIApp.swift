@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct LottieSwiftUIApp: App {
     let persistenceController = PersistenceController.shared
+    
+    
 
     var body: some Scene {
         WindowGroup {
