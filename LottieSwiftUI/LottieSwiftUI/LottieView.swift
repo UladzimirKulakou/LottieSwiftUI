@@ -1,18 +1,17 @@
 //
-//  ContentView.swift
+//  LottieView.swift
 //  LottieSwiftUI
 //
 //  Created by Владимир  on 17.06.22.
 //
 
 import SwiftUI
-import CoreData
 import Lottie
 
-struct ContentView: UIViewRepresentable {
-    let name = "90366-the-player"
-    let loopMode: LottieLoopMode = .loop
+struct LottieView: UIViewRepresentable {
     
+    let name = "106649-learn"
+    let loopMode: LottieLoopMode = .loop
     
     func makeUIView(context: Context) -> UIView {
         let view = UIView()
@@ -35,33 +34,16 @@ struct ContentView: UIViewRepresentable {
             animationView.widthAnchor.constraint(equalTo: view.widthAnchor)
         ])
         return view
-        
     }
+
     func updateUIView(_ uiView: UIView, context: Context) {
-        
+
     }
-    
 
 }
-struct ContentViewNavigation: View {
-    
-    var body: some View {
-        NavigationView {
-            VStack {
-                NavigationLink(
-                    
-                    destination: LottieView(),
-                    label: {
-                        ContentView()
-                    })
-            }
-        }
-    }
-}
 
-struct ContentView_Previews: PreviewProvider {
+struct LottieView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        ContentViewNavigation()
+        LottieView()
     }
 }
